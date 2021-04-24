@@ -10,9 +10,8 @@ MAPS = {'ll': (None, None),
         'type': 'map'
         }
 SQL_map = None
-WF_place = 'Москва'
 
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='t!')
 bot.remove_command('help')
 
 
@@ -27,7 +26,6 @@ def get_map(maps):
             Комментарий: {maps['points'][i]['description']}'''
     else:
         desc = 'Вот, чистая карта'
-
     return desc + '\n' + link
 
 
@@ -46,7 +44,8 @@ async def help(ctx):
 !add_point : создает точку по поисковому запросу. e.x. - !add_point Москва.
 !del_point : удаляет точку по существующему номеру. e.x. - !del_point 1.
 !edit_point : изменяет параметры точки по существующему номеру (coords, name, description).
- e.x. - !edit_point 1 description Столица России.
+ e.x. - !edit_point 1 description Столица России. По параметру change_place меняет местоположение точки по поисковому
+ запросу.
 !move_to : размещает карту по центру указанного объекта по поисковому запросу. e.x. - !move_to Москва. Также можно
 переместиться к существующим точкам. e.x. - !move_to point 1
 !set_type : устанавливает тип карты (map; sat; sat,skl; sat,trf,skl; map,trf,skl). e.x. - !set_type sat.
