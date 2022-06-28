@@ -3,7 +3,7 @@ from mapsAPI import *
 from WeatherForecastAPI import *
 import sqlite3
 
-TOKEN = 'Njk1NzA5MjEwMTA4NzU1OTc5.XoeIWw.1qVGrnNiAUB7mjPEqLHW5cUepvE'
+TOKEN = ''
 MAPS = {'ll': (None, None),
         'points': [],
         'z': 3,
