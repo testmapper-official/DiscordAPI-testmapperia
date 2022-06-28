@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = '40d1649f-0493-4b70-98ba-98533de7710b'
+API_KEY = ''
 
 
 def geocode(address):
