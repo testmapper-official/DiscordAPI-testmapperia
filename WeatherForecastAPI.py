@@ -1,6 +1,6 @@
 import requests
 
-headers = {"X-Yandex-API-Key": 'fe52aeef-8626-45e1-81ad-720a8e098774'}
+headers = {"X-Yandex-API-Key": ''}
 
 
 #  API Yandex.Погода "Тестовый"
